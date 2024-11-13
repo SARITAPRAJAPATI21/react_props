@@ -1,0 +1,45 @@
+.card {
+    background-color: #a4cde0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(88, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    max-width: 300px;
+    transition: all 0.3s ease;
+    
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #580000;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #FFFFFF;
+}
+.card::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 3px;
+    height: calc(100% - 50px);
+    background-color: #580000;
+}
+.card-content {
+    position: relative;
+    z-index: 1;
+    
+}
+.card-title {
+    color: #580000;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.card-text {
+    color: #1A1A1A;
+    line-height: 1.6;
+}
